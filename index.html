@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png" />
+    <!-- css  -->
+    <link rel="stylesheet" href="./styles/laptop.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <!-- <link rel="stylesheet" href="./styles/desktop.css" /> -->
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>HANU</title>
+  </head>
+  <body>
+    <div class="all">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-alt-circle-up"></i>
+      </button>
+      <section id="header" class="container">
+        <div class="green-dot-opa header-dot-opa"></div>
+        <div class="green-big-dot header-dot-big"></div>
+        <div class="green-dot-opa header-dot-opa2"></div>
+        <div class="green-big-dot header-dot-big2"></div>
+        <div class="green-dot-opa header-dot-opa3"></div>
+        <div class="green-big-dot header-dot-big3"></div>
+
+        <div class="nav-bar flex-between">
+          <div class="logo-header flex-center">
+            <div class="logo-img">
+              <img src="./images/Logo.png" />
+            </div>
+            <div class="logo-text">
+              <h3>Khoa Tiếng ITALIA</h3>
+              <p>Trường Đại Học Hà Nội</p>
+            </div>
+          </div>
+          <div class="direction">
+            <a class="direction__item" href="#introduction">giới thiệu</a>
+            <a class="direction__item" href="#tin-tuc">tin tức - sự kiện</a>
+            <a class="direction__item" href="#education">đào tạo </a>
+            <a class="direction__item" href="#research">nghiên cứu khoa học</a>
+            <a class="direction__item" href="#collab">hợp tác</a>
+            <a class="direction__item" href="#share">chia sẻ trải nghiệm</a>
+            <a class="direction__item" href="#library">thư viện ảnh</a>
+            <a class="direction__item"><i class="fas fa-search"></i></a>
+          </div>
+          <!-- side bar -->
+          <div class="nav-bar__side-bar">
+            <i
+              id="openSideBar"
+              class="fas fa-bars icon-sbar"
+              onclick="openSideBar()"
+            ></i>
+            <div id="mySidebar" class="sidebar">
+              <div>
+                <i class="fas fa-times close-icon" onclick="closeSideBar()"></i>
+              </div>
+              <div class="sidebar__directions">
+                <a class="baritem" href="#introduction">giới thiệu</a>
+                <a class="baritem" href="#tin-tuc">tin tức - sự kiện</a>
+                <a class="baritem" href="#education">đào tạo </a>
+                <a class="baritem" href="#research">nghiên cứu khoa học</a>
+                <a class="baritem" href="#collab">hợp tác</a>
+                <a class="baritem" href="#share">chia sẻ trải nghiệm</a>
+                <a class="baritem" href="#library">thư viện ảnh</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-text">
+          <h1>Benvenuto Nel Dipartimento Italia!</h1>
+          <p>L'"unico" luogo di formazione della lingua italiana al Nord</p>
+        </div>
+      </section>
+
+      <!-- introduction section -->
+      <section id="introduction" class="container intro">
+        <div class="intro1">
+          <div class="intro__item img-section">
+            <div class="icon-item">
+              <i class="fas fa-university" style="color: #3c486b"></i>
+            </div>
+            <div class="number-item">20</div>
+            <div class="text-item">Năm đào tạo</div>
+          </div>
+
+          <div class="intro__item img-section">
+            <div class="icon-item">
+              <i class="fas fa-user-graduate" style="color: #d14d72"></i>
+            </div>
+            <div class="number-item">1,000+</div>
+            <div class="text-item">SV được đào tạo</div>
+          </div>
+
+          <div class="intro__item img-section">
+            <div class="icon-item">
+              <i class="fas fa-building" style="color: #f9d949"></i>
+            </div>
+            <div class="number-item">100+</div>
+            <div class="text-item">Đối tác quốc tế</div>
+          </div>
+
+          <div class="intro__item img-section">
+            <div class="icon-item">
+              <i class="fas fa-dice-d6" style="color: #f45050"></i>
+            </div>
+            <div class="number-item">250+</div>
+            <div class="text-item">Chương trình trao đổi</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tin tuc section -->
+      <section id="tin-tuc" class="container">
+        <!-- green dot -->
+        <div class="green-dot tin-tuc-dot"></div>
+        <!--  -->
+        <div
+          class="title tin-tuc-title"
+          style="
+            text-align: right;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-right: 2em;
+          "
+        >
+          <h1>TIN TỨC - SỰ KIỆN</h1>
+          <p>Tổng hợp tin tức, sự kiện mới nhất của Khoa Tiếng Italia</p>
+        </div>
+        <div class="contents flex-around flex-column-center">
+          <div class="contents__img-tin-tuc col-lg-6 col-md-12 col-sm-12">
+            <img id="test" src="./images/news/news.jpg" class="img-tin-tuc" />
+          </div>
+          <div
+            class="contents__tin-tuc flex-column-between col-lg-6 col-md-12 col-sm-12"
+          >
+            <h1>Tọa đàm Dịch Văn học dành cho SV định hướng</h1>
+            <p style="line-height: 200%">
+              Sáng ngày 13/4/2022, Khoa tiếng Italia đã tổ chức buổi Tọa đàm
+              Dịch văn học với sự tham gia của diễn giả Nguyễn Xuân Hồng - Một
+              dịch giả có nhiều tác phẩm dịch có uy tín. Khách mời của buổi tọa
+              đàm là dịch giả, nhà báo Nguyễn Xuân Hồng, Trưởng phòng thư kí tòa
+            </p>
+            <div class="more-info flex-between">
+              <div class="more-info__date">
+                <span><i class="fas fa-history"></i></span> 21/10/2021
+              </div>
+              <div class="more-info__view">Xem thêm</div>
+            </div>
+          </div>
+          <div class="green-dot tin-tuc-dot2"></div>
+        </div>
+        <div class="pre-next tintuc-next-pre">
+          <i
+            class="fas fa-long-arrow-alt-left pre-next__pre"
+            onclick="prev()"
+          ></i>
+          <i
+            class="fas fa-long-arrow-alt-right pre-next__next"
+            onclick="next()"
+          ></i>
+        </div>
+      </section>
+
+      <!-- dao tao section -->
+      <section id="education" class="container">
+        <!-- green dot -->
+        <div class="green-dot edu-dot"></div>
+        <div class="green-dot edu-dot2"></div>
+        <!--  -->
+        <div class="title" style="padding-top: 2em; padding-bottom: 2em">
+          <h1>ĐÀO TẠO</h1>
+          <p>Chương trình đào tạo chuẩn đầu ra Ngành Ngôn ngữ Italia</p>
+        </div>
+        <div class="contents flex-between flex-column-center-reverse">
+          <div
+            class="content__edu flex-column-around col-lg-6 col-md-12 col-sm-12"
+          >
+            <h1>Hệ Chính quy Ngôn ngữ Italia</h1>
+            <p style="line-height: 200%">
+              Chương trình đào tạo đại học ngành Ngôn ngữ Italia nhằm đào tạo
+              sinh viên có phẩm chất chính trị vững vàng; có kiến thức, kỹ năng,
+              thái độ và đạo đức phù hợp để làm việc trong môi trường đa ngôn
+              ngữ, đa văn hóa và có khả năng thích ứng cao với những thay đổi
+              nhanh chóng của nền kinh tế đang trong quá trình hội
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img id="test2" src="./images/education/education.png" class="" />
+          </div>
+        </div>
+        <div class="pre-next daotao-pre-next">
+          <i
+            class="fas fa-long-arrow-alt-left pre-next__pre"
+            onclick="prev2()"
+          ></i>
+          <i
+            class="fas fa-long-arrow-alt-right pre-next__next"
+            onclick="next2()"
+          ></i>
+        </div>
+      </section>
+
+      <!-- nghien cuu khoa hoc section -->
+      <section id="research" class="container">
+        <div
+          class="title"
+          style="
+            text-align: right;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-right: 3em;
+          "
+        >
+          <h1>NGHIÊN CỨU KHOA HỌC</h1>
+          <p>Hoạt động Nghiên cứu Khoa học cho Giảng viên và Sinh viên</p>
+        </div>
+        <div class="contents__research flex-around">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card1 card-hover2">
+              <img src="./images/research/research2.jpg" class="img-research" />
+              <h3>Nghiên cứu khoa học Giảng viên</h3>
+              <p class="more-info__view">Xem thêm</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card2 card-hover2">
+              <img src="./images/research/research2.jpg" class="img-research" />
+              <h3>Nghiên cứu khoa học Giảng viên</h3>
+              <p class="more-info__view">Xem thêm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- collab section -->
+      <section id="collab" class="container">
+        <div
+          class="title"
+          style="padding-top: 2em; padding-bottom: 2em; padding-left: 5em"
+        >
+          <h1>HỢP TÁC</h1>
+          <p>Hoạt động hợp tác trong và ngoài nước của Khoa Tiếng Italia</p>
+        </div>
+        <div class="flex-around img-collabs img-cl1">
+          <img
+            id="test3"
+            src="./images/collab/collab1.jpg"
+            class="img-collab1 img-section"
+          />
+        </div>
+        <div class="contents flex-between contents-collab">
+          <div class="flex-between col-lg-6 col-md-12 col-sm-12 imgs-collab">
+            <div class="img-cl2">
+              <img
+                id="test5"
+                src="./images/collab/collab2.png"
+                class="img-collab2 img-section"
+              />
+            </div>
+            <div class="img-cl3">
+              <img
+                id="test4"
+                src="./images/collab/collab3.png"
+                class="img-collab3 img-section"
+              />
+            </div>
+          </div>
+          <div class="flex-column-between col-lg-6 col-md-12 col-sm-12 text-cl">
+            <h1>Call for papers Convego Internazionale ItaHanu</h1>
+            <p style="line-height: 200%">
+              In occasione del 15o anniversario del Dipartimento di
+              Italianistica presso l’Università di Hanoi e celebrando la prima
+              Settimana dell’Italia in ASEAN, considerato il forte e reciproco
+              interesse tra l’Italia e l’ASEAN, l’Università di Hanoi (HANU)
+              intende organizzare
+            </p>
+            <div class="more-info flex-between">
+              <div class="more-info__date">
+                <span><i class="fas fa-history"></i></span> 21/10/2021
+              </div>
+              <div class="more-info__view">Xem thêm</div>
+            </div>
+          </div>
+        </div>
+        <div class="pre-next collab-next-pre">
+          <i
+            class="fas fa-long-arrow-alt-left pre-next__pre"
+            onclick="prev3()"
+          ></i>
+          <i
+            class="fas fa-long-arrow-alt-right pre-next__next"
+            onclick="next3()"
+          ></i>
+        </div>
+      </section>
+
+      <!-- share and experience section -->
+      <section id="share" class="container">
+        <div class="green-dot share-dot"></div>
+
+        <div class="green-big-dot share-big-dot1"></div>
+        <div class="green-dot share-dot1"></div>
+        <div class="green-big-dot share-big-dot2"></div>
+        <div class="green-dot share-dot2"></div>
+        <div
+          class="title"
+          style="
+            text-align: right;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-right: 2em;
+          "
+        >
+          <h1>CHIA SẺ - TRẢI NGHIỆM</h1>
+          <p>Góc chia sẻ về những trải nghiệm của CBGV, SV Khoa Tiếng Italia</p>
+        </div>
+        <div class="share-cards flex-around">
+          <div class="card-share col-lg-4 card-hover2">
+            <img src="./images/experience/experience1.jpg" class="img-share" />
+            <div class="exp-card__text">
+              <div>Hành trình khám phá Italy của cô gái Việt</div>
+              <div style="line-height: 150%">
+                Dung Trần có tình yêu đặc biệt dành cho Italy. Với cô, Italy là
+                nơi Dung học tập để mở mang "nhận thức lẫn trái tim". Cô ấn
+                tượng với các công trình kiến trúc, văn hóa,
+              </div>
+              <div>01/06/2022</div>
+            </div>
+          </div>
+
+          <div class="card-share col-lg-4 flex-column-between card-hover2">
+            <img src="./images/experience/experience2.jpg" class="img-share" />
+            <div class="exp-card__text">
+              <div>Đam mê quảng bá văn hóa Việt của nữ du học sinh Ý</div>
+              <div style="line-height: 150%">
+                Chia sẻ về hành trình du học của mình, Vân cho biết: "Em không
+                có ý định du học ngay từ đầu, mãi đến hè năm lớp 10 lên lớp 11
+                em mới bắt đầu nhen nhóm ý tưởng
+              </div>
+              <div>01/06/2022</div>
+            </div>
+          </div>
+
+          <div class="card-share col-lg-4 flex-column-between card-hover2">
+            <img src="./images/experience/experience3.jpg" class="img-share" />
+            <div class="exp-card__text">
+              <div>Nữ du học sinh Việt xinh đẹp, đạt điểm gần tuyệt đối</div>
+              <div style="line-height: 150%">
+                Trước khi đi du học, Linh Trang là niềm tự hào của gia đình khi
+                luôn đạt danh hiệu học sinh giỏi 12 năm liên tiếp, ngoài ra, cô
+                nàng còn từng là thành viên tích cực
+              </div>
+              <div>01/06/2022</div>
+            </div>
+          </div>
+        </div>
+        <div class="pre-next share-next-pre">
+          <i class="fas fa-long-arrow-alt-left pre-next__pre"></i>
+          <i class="fas fa-long-arrow-alt-right pre-next__next"></i>
+        </div>
+      </section>
+
+      <!-- library section -->
+      <section id="library" class="container">
+        <div class="green-dot lb-dot1"></div>
+        <div class="green-dot lb-dot2"></div>
+        <div class="green-dot lb-dot3"></div>
+        <div class="green-dot lb-dot4"></div>
+
+        <div
+          class="library-page__title"
+          style="padding-top: 2em; padding-bottom: 2em; padding-left: 5em"
+        >
+          <h1>THƯ VIỆN ẢNH</h1>
+          <p>Khoa Tiếng Italia dưới góc nhìn của CBGV, SV</p>
+        </div>
+        <div class="library-page__contents">
+          <div class="layout-content__item">
+            <img
+              src="./images/library/library1.jpeg"
+              class="img-lb img-section"
+            />
+          </div>
+          <div class="layout-content__item">
+            <img
+              src="./images/library/library2.jpg"
+              class="img-lb img-section"
+            />
+          </div>
+          <div class="layout-content__item">
+            <img
+              src="./images/library/library3.jpg"
+              class="img-lb img-section"
+            />
+          </div>
+          <div class="layout-content__item">
+            <img
+              src="./images/library/library4.jpg"
+              class="img-lb img-section"
+            />
+          </div>
+          <div class="layout-content__item">
+            <img
+              src="./images/library/library5.jpg"
+              class="img-lb img-section"
+            />
+          </div>
+        </div>
+        <div class="pre-next daotao-pre-next">
+          <i class="fas fa-long-arrow-alt-left pre-next__pre"></i>
+          <i class="fas fa-long-arrow-alt-right pre-next__next"></i>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <section id="footer" class="container">
+        <div class="green-dot-opa footer-dot1"></div>
+        <div class="green-dot-opa footer-dot2"></div>
+        <div class="green-dot-opa footer-dot3"></div>
+        <div class="contents-footer">
+          <div class="title-footer">
+            <img class="logo-footer" src="./images/Logo.png" />
+            <div>
+              <h1 class="text-footer1">KHOA TIẾNG ITALIA</h1>
+              <h1 class="text-footer2">Trường Đại Học Hà Nội</h1>
+            </div>
+          </div>
+
+          <div class="contacts flex-between">
+            <div
+              class="item-contact flex-column-between"
+              style="line-height: 200%"
+            >
+              <div>
+                Địa chỉ: Km 9 Đường Nguyễn Trãi - Thanh Xuân - Hà Nội - Việt Nam
+              </div>
+              <div>Điện thoại: (84.4) 35 54 17 95</div>
+              <div>Fax: (84-4) 38 54 45 50</div>
+              <div>Email: ita@hanu.edu.vn</div>
+            </div>
+
+            <div class="item-contact" style="line-height: 200%">
+              <div>Giới thiệu</div>
+              <div>Tin tức - Sự kiện - Thông báo</div>
+              <div>Đào tạo</div>
+              <div>Nghiên cứu khoa học</div>
+            </div>
+
+            <div class="item-contact" style="line-height: 200%">
+              <div>Hợp tác quốc tế</div>
+              <div>Hoạt động ngoại khóa</div>
+              <div>Trải nghiệm Italia</div>
+              <div>Liên hệ</div>
+            </div>
+          </div>
+
+          <div class="copybyright">
+            <h3>Copyright 2022 - Khoa Tiếng Italia. All Rights Reserved</h3>
+            <p>Powered by I&E Corp</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
